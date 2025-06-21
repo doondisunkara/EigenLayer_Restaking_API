@@ -24,6 +24,5 @@ const RestakerSchema = new mongoose.Schema({
     }
 });
 
-RestakerSchema.index({ userAddress: 1 }); // Index for efficient querying [4]
 
 module.exports = mongoose.model('Restaker', RestakerSchema);

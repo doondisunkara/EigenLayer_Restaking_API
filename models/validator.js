@@ -29,6 +29,4 @@ const ValidatorSchema = new mongoose.Schema({
     }
 });
 
-ValidatorSchema.index({ operatorAddress: 1 }); // Index for efficient querying [4]
-
 module.exports = mongoose.model('Validator', ValidatorSchema);

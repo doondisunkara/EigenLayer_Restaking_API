@@ -25,6 +25,5 @@ const RewardSchema = new mongoose.Schema({
     }
 });
 
-RewardSchema.index({ walletAddress: 1 }); // Index for efficient querying [4]
 
 module.exports = mongoose.model('Reward', RewardSchema);
